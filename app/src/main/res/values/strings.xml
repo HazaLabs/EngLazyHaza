@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EngLazyHaza</string>
+    <string name="settings">Settings</string>
+    <string name="about_app">About</string>
 </resources>
