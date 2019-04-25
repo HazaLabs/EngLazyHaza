@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         translate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                for(int i = 0;i < 2;i++) {
+                    FindWord();
+                }
+
+            }
+            void FindWord(){
                 try {
                     //InputStream vacab = getAssets().open("textword.txt");
                     Scanner scanner = new Scanner(reader.readLine());
@@ -68,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                             ChangeClipBoard.setText("Слово отсутствует");
                         }
                     }
-
                 }
                 catch (IOException ex)
                 {
@@ -76,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     ChangeClipBoard.setText("Exception");
                 }
                 finally {
-                    //scanner.close();
+
                 }
             }
 
