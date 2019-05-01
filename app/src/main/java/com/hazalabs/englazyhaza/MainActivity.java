@@ -1,12 +1,17 @@
 package com.hazalabs.englazyhaza;
 
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -48,7 +53,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         //testcodeand
+        //String[] languages = {"Русский", "Український", "Ukrainian", "Polski", "Le français", "Español", "Česky"};
+        Spinner spinner = (Spinner)findViewById(R.id.Fromlang);
+        Spinner spinner2 = (Spinner)findViewById(R.id.onlang);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(MainActivity.this ,android.R.layout.simple_spinner_item, new String[]
+                {"Русский", "Український", "Ukrainian", "Polski", "Le français", "Español", "Česky"});
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(dataAdapter);
+        spinner2.setAdapter(dataAdapter);
+
         final int counter = 0;
         final EditText TextTest = (EditText)findViewById(R.id.editText);
         final TextView ChangeClipBoard = (TextView)findViewById(R.id.textView2);
