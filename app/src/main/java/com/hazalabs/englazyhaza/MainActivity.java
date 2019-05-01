@@ -9,8 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.json.JSONException;
+
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -48,32 +52,41 @@ public class MainActivity extends AppCompatActivity {
         final int counter = 0;
         final EditText TextTest = (EditText)findViewById(R.id.editText);
         final TextView ChangeClipBoard = (TextView)findViewById(R.id.textView2);
+        final TextView counterText = (TextView)findViewById(R.id.textView);
         Button translate = (Button)findViewById(R.id.button);
-        final InputStream vacab = getResources().openRawResource(R.raw.testword);
-        final BufferedReader reader = new BufferedReader(new InputStreamReader(vacab));
         translate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for(int i = 0;i < 2;i++) {
                     FindWord();
-                }
 
             }
             void FindWord(){
+                //Scanner scanner;
+                String word = TextTest.getText().toString();
+                word = word.toLowerCase();
                 try {
-                    //InputStream vacab = getAssets().open("textword.txt");
-                    Scanner scanner = new Scanner(reader.readLine());
-                    String word = TextTest.getText().toString();
-                    while(scanner.hasNextLine()) {
-                        String line = scanner.nextLine();
-                        String[] cols = line.split(" ");
-                        if (cols[0].equals(word)) {
-                            ChangeClipBoard.setText(cols[1]);
-                        }
-                        else {
-                            ChangeClipBoard.setText("Слово отсутствует");
-                        }
+                    String defendLine;
+                    int counter = 0;
+                    InputStream vacab = getResources().openRawResource(R.raw.testword);
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(vacab));
+                    //scanner = new Scanner(reader);
+                    //defendLine = reader.readLine();//while(scanner.hasNextLine()) {
+                        while ((defendLine = reader.readLine()) != null) {
+                            //String line = scanner.nextLine();
+                            //String[] cols = line.split("--");
+                            String line = defendLine.toLowerCase();
+                            String[] cols = line.split("--");
+                            if (cols[1].equals(word)) {
+                                ChangeClipBoard.setText(cols[2]);
+                                break;
+                            } else {
+                                ChangeClipBoard.setText("Слово отсутствует");
+                            }
+                            counter = counter + 1;
+                            counterText.setText(Integer.toString(counter));
+                     //   }
                     }
+                     reader.close();
                 }
                 catch (IOException ex)
                 {
