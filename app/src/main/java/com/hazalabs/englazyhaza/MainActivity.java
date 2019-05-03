@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +27,8 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
-
+    public int FromLanguage = 0;
+    public int ToLanguage = 0;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //return super.onCreateOptionsMenu(menu);
@@ -57,18 +59,35 @@ public class MainActivity extends AppCompatActivity {
 
         //testcodeand
         //String[] languages = {"Русский", "Український", "Ukrainian", "Polski", "Le français", "Español", "Česky"};
-        Spinner spinner = (Spinner)findViewById(R.id.Fromlang);
-        Spinner spinner2 = (Spinner)findViewById(R.id.onlang);
+        final Spinner spinner = (Spinner)findViewById(R.id.Fromlang);
+        final TextView counterText = (TextView)findViewById(R.id.textView);
+        final Spinner spinner2 = (Spinner)findViewById(R.id.onlang);
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(MainActivity.this ,android.R.layout.simple_spinner_item, new String[]
-                {"Русский", "Український", "Ukrainian", "Polski", "Le français", "Español", "Česky"});
+                {"Русский", "Український", "English", "Polski", "Le français", "Español", "Česky"});
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(dataAdapter);
         spinner2.setAdapter(dataAdapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View itemSelected, int selectedItemPosition, long selectedId) {
+                FromLanguage = spinner.getSelectedItemPosition() + 1;
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+                FromLanguage = 1;
+            }
+        });
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View itemSelected, int selectedItemPosition, long selectedId) {
+                ToLanguage = spinner2.getSelectedItemPosition() + 1;
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+                ToLanguage = 1;
+            }
+        });
+
 
         final int counter = 0;
         final EditText TextTest = (EditText)findViewById(R.id.editText);
         final TextView ChangeClipBoard = (TextView)findViewById(R.id.textView2);
-        final TextView counterText = (TextView)findViewById(R.id.textView);
         Button translate = (Button)findViewById(R.id.button);
         translate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     String defendLine;
                     int counter = 0;
-                    InputStream vacab = getResources().openRawResource(R.raw.testword);
+                    InputStream vacab = getResources().openRawResource(R.raw.vocabulary);
                     BufferedReader reader = new BufferedReader(new InputStreamReader(vacab));
                     //scanner = new Scanner(reader);
                     //defendLine = reader.readLine();//while(scanner.hasNextLine()) {
@@ -92,8 +111,8 @@ public class MainActivity extends AppCompatActivity {
                             //String[] cols = line.split("--");
                             String line = defendLine.toLowerCase();
                             String[] cols = line.split("--");
-                            if (cols[1].equals(word)) {
-                                ChangeClipBoard.setText(cols[2]);
+                            if (cols[FromLanguage].equals(word)) {
+                                ChangeClipBoard.setText(cols[ToLanguage]);
                                 break;
                             } else {
                                 ChangeClipBoard.setText("Слово отсутствует");
