@@ -1,20 +1,19 @@
-Знакомство
-1--Привет--Привіт--Hello--Czesc--Bonjour--Hola--Dobry den
-2--До свиданья--До побачення--Goodbye--Do widzenia--Au revoir--Adios--Sbohem
-3--Как дела?--Як справи?--How are you?--Jak sie masz?--Comment allez vous?--Como estas?--Jak se mas?
-4--Как тебя зовут?--Як тебе звати?--What's your name?--Jak masz na imie?--Quel est votre nom?--Cual es tu nombre?--Jake je vase jmeno?
-5--Откуда вы?--Звідки Ви?--Where are you from?--Skad jestes?--Tu es d'ou?--Odkud jste?
-6--Меня зовут--Мене звати--My name is--Mam na imie--Je m'appelle--Mi nombre es--Jmenuji se
-7--Кем ты работаешь?--Ким ти працюєш?--What do you work?--Czy pracujesz?--Travaillez-vous? Qui?--?Trabajas?Quien?--Pracujete?
-8--Я люблю заниматься--Я люблю займатися--I like to do--Lubie to robic--J'aime faire--Me gusta hacer--Rad delam
-9--Встретимся в 6 часов?--Зустрінемося о 6 годині?-See you at 6 o'clock?-Do zobaczenia o szostej?-On se voit a 6 heures?-?Nos vemos a las 6 en punto?-Uvidime se v 6 hodin?
-10--Сколько сейчас времени?--Яка зараз година?--What time is it?--Ktora jest godzina--Quelle heure est il--Que hora es--Kolik je hodin?
-11--Я с Украины--Я з України--I'm from Ukraine--Jestem z Ukrainy--Je suis d'Ukraine--Soy de ucrania--Jsem z Ukrajiny
-12--Рад знакомству--Радий знайомству--Pleased to meet you--Milo cie poznac--Ravi de vous rencontrer--Un placer conocerte--Rad vas poznavam
-13--Сколько вам лет?--Скільки вам років?--How old are you?--Ile masz lat--Tu as quel age?--Cuantos anos tienes?--Jak jste stari?
-14--Чем вы увлекаетесь?--Чим ви захоплюєтеся?--What are your hobbies?--Co lubisz?--Qu'est-ce que tu aimes?--?A que te gusta?--Co se vam libi?
-15--Что ты делаешь?--Що ти робиш?--What are you doing?--Co robisz--Tu fais quoi--Que estas haciendo--Co to delas?
-16--Как пройти к ... ?--Як пройти до ... ?--How to get to the ... ?--Jak sie dostac do ...?--Comment se rendre a ...?--?Como llegar a ...?--Jak se dostat do ...?
-17--Где мы находимся?--Де ми знаходимося?--Where are we?--Gdzie jestesmy?--Ou sommes nous?--Donde estamos?--Kde jsme?
-18--Как называется эта улица?--Як називається ця вулиця?--What's the name of this street?--Jak nazywa sie ta ulica?--Comment s'appelle cette rue?--?Como se llama esta calle?--Jaka je tato ulice?
-19--Где ближайший магазин?--Де найближчий магазин?--Where is the nearest store?--Gdzie jest najblizszy sklep?--Ou se trouve le magasin le plus proche?--?Donde esta la tienda mas cercana?--Kde je nejblizsi obchod?
+1--РџСЂРёРІРµС‚--РџСЂРёРІС–С‚--Hello--Czesc--Bonjour--Hola--Dobry den
+2--Р”Рѕ СЃРІРёРґР°РЅСЊСЏ--Р”Рѕ РїРѕР±Р°С‡РµРЅРЅСЏ--Goodbye--Do widzenia--Au revoir--Adios--Sbohem
+3--РљР°Рє РґРµР»Р°?--РЇРє СЃРїСЂР°РІРё?--How are you?--Jak sie masz?--Comment allez vous?--Como estas?--Jak se mas?
+4--РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?--РЇРє С‚РµР±Рµ Р·РІР°С‚Рё?--What is your name?--Jak masz na imie?--Quel est votre nom?--Cual es tu nombre?--Jake je vase jmeno?
+5--РћС‚РєСѓРґР° РІС‹?--Р—РІС–РґРєРё Р’Рё?--Where are you from?--Skad jestes?--Tu es d ou?--Odkud jste?
+6--РњРµРЅСЏ Р·РѕРІСѓС‚--РњРµРЅРµ Р·РІР°С‚Рё--My name is--Mam na imie--Je m'appelle--Mi nombre es--Jmenuji se
+7--РљРµРј С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ?--РљРёРј С‚Рё РїСЂР°С†СЋС”С€?--What do you work?--Czy pracujesz?--Travaillez-vous? Qui?--?Trabajas?Quien?--Pracujete?
+8--РЇ Р»СЋР±Р»СЋ Р·Р°РЅРёРјР°С‚СЊСЃСЏ--РЇ Р»СЋР±Р»СЋ Р·Р°Р№РјР°С‚РёСЃСЏ--I like to do--Lubie to robic--J'aime faire--Me gusta hacer--Rad delam
+9--Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ 6 С‡Р°СЃРѕРІ?--Р—СѓСЃС‚СЂС–РЅРµРјРѕСЃСЏ Рѕ 6 РіРѕРґРёРЅС–?--See you at 6 o'clock?-Do zobaczenia o szostej?--On se voit a 6 heures?--?Nos vemos a las 6 en punto?--Uvidime se v 6 hodin?
+10--РЎРєРѕР»СЊРєРѕ СЃРµР№С‡Р°СЃ РІСЂРµРјРµРЅРё?--РЇРєР° Р·Р°СЂР°Р· РіРѕРґРёРЅР°?--What time is it?--Ktora jest godzina--Quelle heure est il--Que hora es--Kolik je hodin?
+11--РЇ СЃ РЈРєСЂР°РёРЅС‹--РЇ Р· РЈРєСЂР°С—РЅРё--I'm from Ukraine--Jestem z Ukrainy--Je suis d'Ukraine--Soy de ucrania--Jsem z Ukrajiny
+12--Р Р°Рґ Р·РЅР°РєРѕРјСЃС‚РІСѓ--Р Р°РґРёР№ Р·РЅР°Р№РѕРјСЃС‚РІСѓ--Pleased to meet you--Milo cie poznac--Ravi de vous rencontrer--Un placer conocerte--Rad vas poznavam
+13--РЎРєРѕР»СЊРєРѕ РІР°Рј Р»РµС‚?--РЎРєС–Р»СЊРєРё РІР°Рј СЂРѕРєС–РІ?--How old are you?--Ile masz lat--Tu as quel age?--Cuantos anos tienes?--Jak jste stari?
+14--Р§РµРј РІС‹ СѓРІР»РµРєР°РµС‚РµСЃСЊ?--Р§РёРј РІРё Р·Р°С…РѕРїР»СЋС”С‚РµСЃСЏ?--What are your hobbies?--Co lubisz?--Qu'est-ce que tu aimes?--?A que te gusta?--Co se vam libi?
+15--Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?--Р©Рѕ С‚Рё СЂРѕР±РёС€?--What are you doing?--Co robisz--Tu fais quoi--Que estas haciendo--Co to delas?
+16--РљР°Рє РїСЂРѕР№С‚Рё Рє ... ?--РЇРє РїСЂРѕР№С‚Рё РґРѕ ... ?--How to get to the ... ?--Jak sie dostac do ...?--Comment se rendre a ...?--?Como llegar a ...?--Jak se dostat do ...?
+17--Р“РґРµ РјС‹ РЅР°С…РѕРґРёРјСЃСЏ?--Р”Рµ РјРё Р·РЅР°С…РѕРґРёРјРѕСЃСЏ?--Where are we?--Gdzie jestesmy?--Ou sommes nous?--Donde estamos?--Kde jsme?
+18--РљР°Рє РЅР°Р·С‹РІР°РµС‚СЃСЏ СЌС‚Р° СѓР»РёС†Р°?--РЇРє РЅР°Р·РёРІР°С”С‚СЊСЃСЏ С†СЏ РІСѓР»РёС†СЏ?--What's the name of this street?--Jak nazywa sie ta ulica?--Comment s'appelle cette rue?--?Como se llama esta calle?--Jaka je tato ulice?
+19--Р“РґРµ Р±Р»РёР¶Р°Р№С€РёР№ РјР°РіР°Р·РёРЅ?--Р”Рµ РЅР°Р№Р±Р»РёР¶С‡РёР№ РјР°РіР°Р·РёРЅ?--Where is the nearest store?--Gdzie jest najblizszy sklep?--Ou se trouve le magasin le plus proche?--?Donde esta la tienda mas cercana?--Kde je nejblizsi obchod?

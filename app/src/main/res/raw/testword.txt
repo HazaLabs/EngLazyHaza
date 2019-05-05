@@ -1,4 +1,5 @@
---one--hello--
---two--goodbay--
---three--etalon--
---four--vray--
+1--Привет--Привіт--Hello--Czesc--Bonjour--Hola--Dobry den
+2--До свиданья--До побачення--Goodbye--Do widzenia--Au revoir--Adios--Sbohem
+3--Как дела?--Як справи?--How are you?--Jak sie masz?--Comment allez vous?--Como estas?--Jak se mas?
+4--Как тебя зовут?--Як тебе звати?--What's your name?--Jak masz na imie?--Quel est votre nom?--Cual es tu nombre?--Jake je vase jmeno?
+5--Откуда вы?--Звідки Ви?--Where are you from?--Skad jestes?--Tu es d'ou?--Odkud jste?
