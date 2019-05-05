@@ -1,6 +1,7 @@
 package com.hazalabs.englazyhaza;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -39,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
+        Intent sett = new Intent(this,settings.class);
         switch(id){
             case R.id.action_settings:
-                //go on next activity
+                startActivity(sett);
                 return true;
             case R.id.action_about:
                 //go on next activity
@@ -126,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 catch (IOException ex)
                 {
                     ex.printStackTrace();
-                    ChangeClipBoard.setText("Exception");
+                    ChangeClipBoard.setText("Exception,please,give feedback about error");
                 }
                 finally {
 
