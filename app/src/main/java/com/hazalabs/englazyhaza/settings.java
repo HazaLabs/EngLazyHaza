@@ -1,5 +1,6 @@
 package com.hazalabs.englazyhaza;
 
+import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -22,6 +23,7 @@ public class settings extends AppCompatActivity {
     public NotificationManager notificationManager;
     private static final int ID_NOTIFY = 1;
     private static final String ID_CHANEL = "CHANEL_ID";
+    long startTime = 1*60*1000; // 2 min
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
