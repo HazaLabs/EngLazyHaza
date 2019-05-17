@@ -39,13 +39,13 @@ public class settings extends AppCompatActivity {
                 PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0,intent, PendingIntent.FLAG_UPDATE_CURRENT);
                 NotificationCompat.Builder notificationBuilder =
                         new NotificationCompat.Builder(getApplicationContext(), ID_CHANEL)
-                            .setAutoCancel(false)
-                            .setSmallIcon(R.drawable.ic_launcher_foreground)
-                            .setWhen(System.currentTimeMillis())
-                            .setContentIntent(pendingIntent)
-                            .setContentTitle("Notification")
-                            .setContentText("SetText")
-                            .setPriority(PRIORITY_HIGH);
+                                .setAutoCancel(false)
+                                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                                .setWhen(System.currentTimeMillis())
+                                .setContentIntent(pendingIntent)
+                                .setContentTitle("Notification")
+                                .setContentText("SetText")
+                                .setPriority(PRIORITY_HIGH);
                 if(isChecked){
                     createChannelIfNeeded(notificationManager);
                     notificationManager.notify(ID_NOTIFY, notificationBuilder.build());
@@ -58,8 +58,8 @@ public class settings extends AppCompatActivity {
     }
     public static void createChannelIfNeeded(NotificationManager manager){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-           NotificationChannel notificationChannel = new NotificationChannel(ID_CHANEL, ID_CHANEL,NotificationManager.IMPORTANCE_DEFAULT);
-           manager.createNotificationChannel(notificationChannel);
+            NotificationChannel notificationChannel = new NotificationChannel(ID_CHANEL, ID_CHANEL,NotificationManager.IMPORTANCE_DEFAULT);
+            manager.createNotificationChannel(notificationChannel);
         }
     }
 }

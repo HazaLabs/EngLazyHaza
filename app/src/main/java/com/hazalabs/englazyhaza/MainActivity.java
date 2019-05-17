@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
         //testcodeand
         //String[] languages = {"Русский", "Український", "Ukrainian", "Polski", "Le français", "Español", "Česky"};
         final Spinner spinner = (Spinner)findViewById(R.id.Fromlang);
@@ -91,6 +90,14 @@ public class MainActivity extends AppCompatActivity {
         final EditText TextTest = (EditText)findViewById(R.id.editText);
         final TextView ChangeClipBoard = (TextView)findViewById(R.id.textView2);
         Button translate = (Button)findViewById(R.id.button);
+        Button learning = (Button)findViewById(R.id.button2);
+        final Intent learnAct = new Intent(this,LearningActivity.class);
+        learning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(learnAct);
+            }
+        });
         translate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
