@@ -11,21 +11,31 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.sql.ResultSet;
 import java.util.Scanner;
 
 public class QuizActivity extends AppCompatActivity {
-int checkedShit;
+    BufferedReader reader;
+    int TLint;
+    int FLint;
+    TextView ToLng;
+    TextView FromLng;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
+        String FL = intent.getStringExtra("FL");
+        String TL = intent.getStringExtra("TL");
         int idFire = Integer.parseInt(id); // для проверки какая нажата кнопка
+        FLint = Integer.parseInt(FL);
+        TLint = Integer.parseInt(TL);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         LearningActivity learningActivity = new LearningActivity();
-        TextView tx = (TextView)findViewById(R.id.textView9);
         Button next = (Button)findViewById(R.id.button3);
-        tx.setText(id);
+        Button resetQuiz = (Button)findViewById(R.id.button4);
+        final InputStream vacab = getResources().openRawResource(R.raw.vocabulary);
+        reader = new BufferedReader(new InputStreamReader(vacab));
         switch (idFire){
             case (1):
 
@@ -55,6 +65,21 @@ int checkedShit;
 
                 break;
         }
+        resetQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    ToLng.setText(" ");
+                    FromLng.setText(" ");
+                    try {
+                        reader.reset();
+                        vacab.reset();
+                    }
+                    catch (IOException ex){
+
+                    }
+
+            }
+        });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,21 +87,23 @@ int checkedShit;
             }
         });
     }
-    void StartQuiz(){
-        TextView txs = (TextView)findViewById(R.id.textView10);
-        String text;
-        String defendLine;
+    public void StartQuiz(){
+        ToLng = (TextView)findViewById(R.id.textView9);
+        FromLng = (TextView)findViewById(R.id.textView10);
         try{
-            InputStream vacab = getResources().openRawResource(R.raw.testword);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(vacab));
-            //Scanner scanner = new Scanner(reader);
-            //text = scanner.nextLine();
-            defendLine = reader.readLine();
-            txs.setText(defendLine);
-            //scanner.close();
+            String defendLine = reader.readLine();
+            String[] cols = defendLine.split("--");
+            ToLng.setText(cols[TLint]);
+            FromLng.setText(cols[FLint]);
         }
-        catch (IOException ex){
-            ex.printStackTrace();
+catch (IOException ex){
+
+}
+        catch (NullPointerException exe){
+            ToLng.setText("If you want to repeat, click 'reset' ");
+        }
+finally {
+
         }
     }
 }

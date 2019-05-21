@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -68,20 +68,28 @@ public class MainActivity extends AppCompatActivity {
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(dataAdapter);
         spinner2.setAdapter(dataAdapter);
+        final Intent learnAct = new Intent(this,LearningActivity.class);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View itemSelected, int selectedItemPosition, long selectedId) {
                 FromLanguage = spinner.getSelectedItemPosition() + 1;
+                learnAct.putExtra("FL", Integer.toString(FromLanguage));
             }
             public void onNothingSelected(AdapterView<?> parent) {
                 FromLanguage = 1;
+                learnAct.putExtra("FL", Integer.toString(FromLanguage));
+                //ForQuiz.putExtra("FL", Integer.toString(FromLanguage));
             }
         });
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View itemSelected, int selectedItemPosition, long selectedId) {
                 ToLanguage = spinner2.getSelectedItemPosition() + 1;
+                learnAct.putExtra("TL", Integer.toString(ToLanguage));
+                // ForQuiz.putExtra("TL", Integer.toString(ToLanguage));
             }
             public void onNothingSelected(AdapterView<?> parent) {
                 ToLanguage = 1;
+                learnAct.putExtra("TL", Integer.toString(ToLanguage));
+                //  ForQuiz.putExtra("TL", Integer.toString(ToLanguage));
             }
         });
 
@@ -91,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
         final TextView ChangeClipBoard = (TextView)findViewById(R.id.textView2);
         Button translate = (Button)findViewById(R.id.button);
         Button learning = (Button)findViewById(R.id.button2);
-        final Intent learnAct = new Intent(this,LearningActivity.class);
         learning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

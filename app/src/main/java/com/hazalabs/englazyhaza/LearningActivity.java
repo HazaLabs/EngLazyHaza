@@ -100,8 +100,14 @@ public class LearningActivity extends AppCompatActivity {
         });
     }
     void CallQuiz(){
+        Intent intent = getIntent();
+        String FL = intent.getStringExtra("FL");
+        String TL = intent.getStringExtra("TL");
         Intent GoQuiz = new Intent(this, QuizActivity.class);
         GoQuiz.putExtra("id", Integer.toString(SelectTheme));
+        GoQuiz.putExtra("FL", FL);
+        GoQuiz.putExtra("TL", TL);
+        //GoQuiz.putExtra("FL", Integer.toString(SelectTheme));
         startActivity(GoQuiz);
     }
 }
