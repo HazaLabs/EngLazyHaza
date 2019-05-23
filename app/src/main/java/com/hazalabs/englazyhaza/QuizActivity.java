@@ -16,8 +16,11 @@ import java.util.Scanner;
 
 public class QuizActivity extends AppCompatActivity {
     BufferedReader reader;
+    boolean onClick = false;
     int TLint;
     int FLint;
+    int FromCounter = 0;
+    int ToCounter = 0;
     TextView ToLng;
     TextView FromLng;
     @Override
@@ -38,7 +41,8 @@ public class QuizActivity extends AppCompatActivity {
         reader = new BufferedReader(new InputStreamReader(vacab));
         switch (idFire){
             case (1):
-
+                FromCounter = 1;
+                ToCounter = 19;
                 break;
             case (2):
 
@@ -68,33 +72,40 @@ public class QuizActivity extends AppCompatActivity {
         resetQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    ToLng.setText(" ");
-                    FromLng.setText(" ");
-                    try {
-                        reader.reset();
-                        vacab.reset();
-                    }
-                    catch (IOException ex){
-
-                    }
+                Intent Restart = getIntent();
+                finish();
+                startActivity(Restart);
 
             }
         });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            StartQuiz();
+            StartQuiz(FromCounter,ToCounter);
             }
         });
     }
-    public void StartQuiz(){
+    public void StartQuiz(int FCounter, int TCounter){
         ToLng = (TextView)findViewById(R.id.textView9);
         FromLng = (TextView)findViewById(R.id.textView10);
+        String defendLine;
         try{
-            String defendLine = reader.readLine();
-            String[] cols = defendLine.split("--");
-            ToLng.setText(cols[TLint]);
-            FromLng.setText(cols[FLint]);
+                    defendLine = reader.readLine();
+                    if(onClick == false) {
+                        for (int i = 1; i < FCounter; i++) {
+                            defendLine = reader.readLine();
+                            onClick = true;
+                        }
+                    }
+                    String[] cols = defendLine.split("--");
+                    if(TCounter == Integer.parseInt(cols[0])){
+                        Intent Restart = getIntent();
+                        finish();
+                        startActivity(Restart);
+                        return;
+                    }
+                    ToLng.setText(cols[TLint]);
+                    FromLng.setText(cols[FLint]);
         }
 catch (IOException ex){
 
