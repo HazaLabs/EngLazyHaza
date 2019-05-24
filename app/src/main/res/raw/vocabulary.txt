@@ -17,3 +17,26 @@
 17--Где мы находимся?--Де ми знаходимося?--Where are we?--Gdzie jestesmy?--Ou sommes nous?--Donde estamos?--Kde jsme?
 18--Как называется эта улица?--Як називається ця вулиця?--What's the name of this street?--Jak nazywa sie ta ulica?--Comment s'appelle cette rue?--?Como se llama esta calle?--Jaka je tato ulice?
 19--Где ближайший магазин?--Де найближчий магазин?--Where is the nearest store?--Gdzie jest najblizszy sklep?--Ou se trouve le magasin le plus proche?--?Donde esta la tienda mas cercana?--Kde je nejblizsi obchod?
+20--ванная--ванна кімната--bathroom--łazienka--salle de Bains--cuarto de baño--koupelna
+21--гараж--гаражі--garage--garaż--garage--garaje--garáž
+22--гостиная--Вітальня--Living room--Salon--Salon--Salón--Obývací pokoj
+23--дверь--Двері--The door--Drzwi--La porte--La puerta--Dveře
+24--дом--Будинок--House--Dom--Maison--Casa--Dům
+25--душ--душ--shower--prysznic--douche--ducha de--sprcha
+26--забор--паркан--fence--płot--clôture--cerca de--plot
+27--занавеска--фіранки для душу--shower curtain--Zasłona prysznicowa--rideau de douche--cortina de ducha--sprchový závěs
+28--зеркало--дзеркало--mirror--lustro--miroir--espejo--zrcadlo
+29--ковёр--килим--rug--Dywan--tapis--Alfombra--koberec
+30--кухня--кухня--kitchen--kuchnia--cuisine--cocina--Kuchyně
+31--мебель--Меблі--furniture--meble--meubles--Mueble--nábytek
+32--микроволновая печь--мікрохвильова піч--microwave oven--kuchenka mikrofalowa--four à micro-ondes--horno de microondas--Mikrovlnná trouba
+33--окно--вікно--window--okno--fenêtre de--ventana--okno
+34--письменный стол--письмовий стіл--writing desk--biurko--bureau d’écriture--escritorio--psací stůl
+35--сад--Сад--Garden--Ogród--Jardin--Jardín--Zahrada
+36--телевизор--телевізор--tv--telewizor--TV--TV--TV
+37--туалет--туалет--toilet--toaleta--toilette--Aseo--záchod
+38--холодильник--холодильник--fridge--lodówka--réfrigérateur--nevera--Lednička
+39--шкаф--шафа--closet--Szafa--placard--armario--skříň
+40--штора--Завіса--Curtain--Kurtyna--Rideau--Cortina--Závěs
+41--мусорный ящик --смітника--wastebin--Kosz na śmieci--poubelle--ceniza--wastebin
+42--книжный шкаф--Книжкова шафа--bookcase--Regał--bibliothèque--Librería--Knihovna
