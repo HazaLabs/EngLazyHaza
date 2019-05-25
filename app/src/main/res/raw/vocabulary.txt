@@ -40,3 +40,95 @@
 40--штора--Завіса--Curtain--Kurtyna--Rideau--Cortina--Závěs
 41--мусорный ящик --смітника--wastebin--Kosz na śmieci--poubelle--ceniza--wastebin
 42--книжный шкаф--Книжкова шафа--bookcase--Regał--bibliothèque--Librería--Knihovna
+43--синий--Синій--Blue--Niebieski--Bleu--Azul--Modrá
+44--красный--Червоний--Red--Czerwony--Rouge--Rojo--Červená
+45--белый--Білий--White--Biały--Blanc--Blanco--Bílá
+46--зелёный--Грін--Green--Zielony--Vert--Verde--Zelená
+47--цвет--Колір--Color--Kolor--Couleur--Color--Barva
+48--Ярко-фиолетовый--Яскраво-пурпурний--Bright purple--Jasny fiolet--Violet brillant--Púrpura brillante--Světle fialová
+49--Тёмно синий --Темно-синій--Dark blue--Ciemny niebieski--Bleu foncé--Azul oscuro--Tmavě modrá
+50--Яркость--Яскравість--Brightness--Jasność--Luminosité--Brillo--Jas
+51--Оранжевый--Помаранчевий--Orange--Pomarańczowy--Orange--Naranja--Oranžová
+52--Жёлтый--Жовтий--Yellow--Żółty--Jaune--Amarillo--Žlutá
+53--Чёрный--Чорний--Black--Czarny--Noir--Negro--Černá
+54--Серый--Сірий--Grey--Szary--Gris--Gris--Šedá
+55--уроки--уроки--lessons--lekcje--leçons--lecciones--lekce
+56--курс--курс--course--kurs--cours--curso--kurz
+57--домашние задания--домашнє завдання--homework--zadanie domowe--travail à domicile--tarea--domácí úkol
+58--оценка--Оцінка за--score--Ocena na--score--puntuación--skóre
+59--школа--школа--school--Szkoła--école--Escuela--škola
+60--учитель--викладач--teacher--nauczyciel--enseignant--Profesor--učitel
+61--тест--тест--test--badania--test--prueba--zkouška
+62--аудитория--Аудиторія--audience--publiczność--public--audiencia--publikum
+63-- ученая степень--науковий ступінь--academic degree--dyplom--diplôme universitaire--grado académico--akademický titul
+64--диплом--Диплом--Diploma--Dyplom--Diplôme--Diploma--Diplom
+65--экзамен--іспит--exam--egzamin--exam--examen--zkouška
+66--лекция--Лекція--Lecture--Wykład--Conférence--Conferencia--Přednáška
+67--университет--Університет--University--Uniwersytet--Université--Universidad--Univerzita
+68--книга--Книга--Book--Książki--Livre--Libro--Kniha
+69--ручка--перо--pen--pióro--stylo--pluma--pero
+70--посещаемость--відвідуваність--attendance--obecności--fréquentation--asistencia--docházka
+71--ученик--Учень--Apprentice--Uczeń--Apprenti--Aprendiz--Učeň
+72--первокурсник--першокурсник--freshman--Freshman--étudiant de première année--estudiante de primer año--Nováček
+73--конспект--Анотація--Abstract--Abstrakcja--Résumé--Resumen--Abstrakt
+74--факультет--Факультет--Faculty--Wydział--Corps professoral--Facultad--Fakulta
+75--учиться--Вивчення--To study--Do badania--Pour étudier--estudiar--Ke studiu
+76--семинар--Семінар--Seminar--Seminarium--Séminaire--Seminario--Seminář
+77--расписание--Розклад--Schedule--Harmonogram--Annexe--Horario--Plán
+78--сумка--сумка--bag--worek--sac--bolsa--taška
+79--тетрадь--Зошит--notebook--Notatnik--carnet de notes--cuaderno--zápisník
+80--лаборатория--Лабораторія--laboratory--laboratorium--laboratoire--laboratorio--laboratoř
+81--выпускник--Випускник--Graduate--Absolwent--Diplômé--Graduado--Absolvent
+82--кровать--ліжко--bed--łóżko--lit--cama--postel
+83--диван--Диван--sofa--kanapa--canapé--sofá--pohovka
+84--кресло--крісло--armchair--Fotel--fauteuil--Sillón--křeslo
+85--стул--Стілець--Chair--Krzesło--Chaise--Silla--Křeslo
+86--журнальный столик--журнальний столик--coffee table--stolik kawowy--table basse--mesa de centro--konferenční stolek
+87--гардероб--шафа--wardrobe--Szafa--garde-robe--armario--Šatní skříň
+88--сервант--сервант--sideboard--kredens--dressoir--Aparador de--Příborník
+89--будильник--будильник--alarm clock--budzik--radio-réveil--reloj despertador--Budík
+90--книжная полка--Книжкова полиця--Bookshelf--Regał--Bibliothèque virtuelle--Estantería--Knihovnička
+91--ковер--килим--carpet--Dywan--tapis--alfombra--koberec
+92--шторы--Штори--curtains--zasłony--rideaux--cortinas--záclony
+93--мусор--сміття--trash--Kosz--poubelle--basura--Koš
+94--Телевизор--Телевізор--Tv--Telewizor--TV--TV--TV
+95--скамейка--лавки--bench--Ława--banc--Banco de--Lavička
+96--письменный стол--письмовий стіл--writing desk--biurko--bureau d’écriture--escritorio--psací stůl
+97--вешалка--Вішалки--Hanger--Wieszak--Cintre--Suspensión--Závěs
+98--зеркало--дзеркало--mirror--lustro--miroir--espejo--zrcadlo
+99--светильник--лампа--lamp--Lampa--lampe--Lámpara--lampa
+100--дверь--Двері--The door--Drzwi--La porte--La puerta--Dveře
+101--одеяло--Ковдра--Quilt--Kołdra--Courtepointe--Edredón--Povlečení
+102--холодильник--холодильник--fridge--lodówka--réfrigérateur--nevera--Lednička
+103--гладильная доска--Прасувальна дошка--Ironing Board--Deska do prasowania--Planche à repasser--Tabla de planchar--Žehlicí prkno
+104--газовая плита--газова плита--gas cooker--kuchenka gazowa--cuisinière à gaz--cocina de gas--Plynový vařič
+105--картина--малюнок--picture--obraz--image--cuadro--obrázek
+106--стиральная машина--пральна машина--washing machine--Pralka--machine à laver--lavadora--Pračka
+107--отдых--відпочинок--vacation--wakacje--vacances--vacaciones--dovolená
+108--каникулы--відпочинок--vacation--wakacje--vacances--vacaciones--dovolená
+109--отпуск--відпочинок--vacation--wakacje--vacances--vacaciones--dovolená
+110--курорт--Курорт--resort--Resort--Resort--complejo--Resort
+111--турагентство--Туристичне агентство--travel agency--Biuro podróży--Agence de voyage--Agencia de viajes--cestovní kancelář
+112--палатка--Намет--tent--namiot--tente--tienda de campaña--stan
+113--экскурсия--Екскурсія--excursion--Wycieczka--excursion--excursión--Exkurze
+114--путевка--Ваучер--voucher--voucher--bon--vale--doklad
+115--путеводитель--Путівник--Travel Guide--Przewodnik podróży--Guide de voyage--Guía de viaje--Cestovní průvodce
+116--прогулка пешком--пішохідні екскурсії--walking tours--piesze wycieczki--visites guidées à pied--excursiones a pie--pěší túry
+117--катание на велосипеде--їзда на велосипеді--biking--Turystyka rowerowa--faire du vélo--andar en bicicleta--Cykloturistika
+118--пикник--Пікнік--Picnic--Piknik--Pic nic--Día de campo--Piknik
+119--поход--Кемпінг--Camping--Camping--Camping--acampada--Kempování
+120--путешествовать--подорожі--travel--podróży--voyage--viajes--cestování
+121--пляж--Пляж--Beach--Plaża--Plage--Playa--Pláž
+122--загорать--Сонячні ванни--sunbathing--opalanie--bain de soleil--tomar el sol--opalování
+123--гостиница--Готель--Hotel--Hotel--Hôtel--Hotel--Hotel
+124--багаж--багаж--luggage--przechowalnia bagażu--bagages--equipaje--zavazadlo
+125--рюкзак--Рюкзак--Backpack--Plecak--Sac à dos--Mochila--Batoh
+126--отъезд--відправлення--departure--odjazdu--départ--salida--Odjezd
+127--прибытие--прибуття--arrival--przyjazdu--arrivée--llegada--Příjezd
+128--фотокамера--камера--camera--kamery--appareil photo--cámara--fotoaparát
+129--карта--Карта--map--mapę--carte--mapa--Mapa
+130--сувениры--сувеніри--souvenirs--Pamiątki--souvenirs--recuerdos--suvenýry
+131--шляпа от солнца--Капелюх сонця--Sun Hat--Kapelusz przeciwsłoneczny--Chapeau de soleil--Sombrero para el sol--Letní klobouk
+132--походные ботинки--походів чоботи--hiking boots--Buty trekkingowe--bottes de randonnée--botas de montaña--turistické boty
+133--Крем от загара--Сонцезахисний крем--Sunblock--Kremów z filtrami--Écran solaire--Bloqueador solar--Opalovací krém
+134--Солнцезащитные очки--Сонцезахисні окуляри--Sunglasses--Okulary przeciwsłoneczne--Lunettes de soleil--Gafas de sol--Sluneční brýle

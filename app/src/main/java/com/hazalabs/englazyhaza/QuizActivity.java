@@ -49,16 +49,20 @@ public class QuizActivity extends AppCompatActivity {
                 ToCounter = 42;
                 break;
             case (3):
-
+                FromCounter = 43;
+                ToCounter = 54;
                 break;
             case (4):
-
+                FromCounter = 55;
+                ToCounter = 81;
                 break;
             case (5):
-
+                FromCounter = 82;
+                ToCounter = 106;
                 break;
             case (6):
-
+                FromCounter = 107;
+                ToCounter = 134;
                 break;
             case (7):
 
