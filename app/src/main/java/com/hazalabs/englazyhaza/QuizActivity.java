@@ -65,13 +65,16 @@ public class QuizActivity extends AppCompatActivity {
                 ToCounter = 134;
                 break;
             case (7):
-
+                FromCounter = 135;
+                ToCounter = 162;
                 break;
             case (8):
-
+                FromCounter = 163;
+                ToCounter = 189;
                 break;
             case (9):
-
+                FromCounter = 190;
+                ToCounter = 211;
                 break;
         }
         resetQuiz.setOnClickListener(new View.OnClickListener() {

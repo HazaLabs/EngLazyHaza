@@ -132,3 +132,81 @@
 132--походные ботинки--походів чоботи--hiking boots--Buty trekkingowe--bottes de randonnée--botas de montaña--turistické boty
 133--Крем от загара--Сонцезахисний крем--Sunblock--Kremów z filtrami--Écran solaire--Bloqueador solar--Opalovací krém
 134--Солнцезащитные очки--Сонцезахисні окуляри--Sunglasses--Okulary przeciwsłoneczne--Lunettes de soleil--Gafas de sol--Sluneční brýle
+135--работа--робота--work--pracy--travail--trabajo--práce
+136--делать--зробити--do--zrobić--faire--hacer--atrakce
+137--производить--виробляють--produce--produkcji--produire des--producir--produkují
+138--реализовывать--реалізації--implement--wdrożenie--mettre en œuvre--poner en práctica--zavést
+139--достичь--досягти--reach--rozporządzenia--portée--llegar a--nařízení
+140--исполнить--виконати--execute--wykonanie--exécuter--ejecutar--spustit
+141--организовывать--організувати--organize--organizowanie--organiser--organizar--organizovat
+142--план--план--plan--plan--plan de--Plan de--plán
+143--пытаться--Спробувати--To try--Spróbować--Essayer--Intentar--Zkusit
+144--делать попытку--зробити знову--do again--Wykonaj ponownie--faire à nouveau--hacer de nuevo--udělat znovu
+145--процесс--процес--process--proces--processus de--proceso--proces
+146--перерыв--Перерва--break--przerwa--rupture--rotura--přestávka
+146--остановиться--зупинитись--to stay--nocleg--pour rester--quedarse--zůstat
+147--реконструировать--реконструювати--reconstruct--Rekonstrukcja--reconstruire--reconstruir--rekonstrukce
+148--достижение--досягнення--achievement--osiągnięcia--réalisation--logro--úspěch
+149--результат--в результаті--the result of the--w wyniku--le résultat de la--el resultado de la--výsledek
+150--успех--успіх у--the success of the--sukces--le succès de la--el éxito de la--úspěch
+151--неудача--провал--failure--awaria--échec--falta--neúspěch
+152--устройство--пристрій--device--urządzenia--appareil--dispositivo de--zařízení
+153--работник--співробітник--employee--pracownik--employé--empleado--zaměstnanec
+154--служащий--співробітник--employee--pracownik--employé--empleado--zaměstnanec
+155--разнорабочий--Різноробочий--Handyman--Złota rączka--Homme à tout faire--encargado de mantenimiento--Údržbář
+156--навык--майстерність--skill--umiejętności--Skill--habilidad--Dovednost
+157--профессия--професії--profession--zawód--profession--profesión--profese
+158--квалификация--Кваліфікація--qualification--kwalifikacje--qualification--calificación--kvalifikace
+159--легкий--легко--easy--łatwe--facile--fácil--snadné
+160--тяжелый--важкий--hard--twardy--dur--duro--tvrdé
+161--невыполнимый--непрацездатною--unworkable--niewykonalne--irréalisable--inviable--nepoužitelný
+162--поликлиника--Поліклініка--Polyclinic--Poliklinika--Polyclinique--Policlínico de--Poliklinika
+163--аптека--Фармація--Pharmacy--Apteka--Pharmacie--Farmacia--Lékárna
+164--больница--Лікарня--Hospital--Szpital--Hôpital--Hospital--Nemocnice
+165--рецепт--рецепт--recipe--przepis--recette--receta--recept
+166--здоровье--здоров'я--health--zdrowie--santé--salud--zdraví
+167--пациент--пацієнт--patient--pacjent--patient--paciente--pacient
+168--заболевание--хвороба--disease--choroby--maladie--enfermedad--nemoc
+169--простуда--застуда--the common cold--przeziębienie--le rhume--el resfriado común--běžné nachlazení
+170--чувствовать себя--відчувати себе--feel--czuć--se sentir--sentir--pocit
+171--инфекция--інфекція--infection--zakażenia--infection--infección--infekce
+172--заболеть--захворіти--getting sick--zachorowaniem--tomber malade--enfermarse--onemocní
+173--головная боль--головний біль--headache--ból głowy--maux de tête--jaqueca--bolest hlavy
+174--лечение--лікування--treatment--leczenie--traitement--tratamiento--Léčba
+175--насморк--нежить--runny nose--wyciek z nosa--nez qui coule--nariz que moquea--rýma
+176--чихать--чхання--sneeze--kichnięcie--éternuement--Estornudar--kýchnutí
+177--кашель--кашель--cough--kaszel--contre la toux--tos--kašel
+178--воспаление--запалення--inflammation--zapalenie--inflammation--inflamación--zánět
+179--головокружение--запаморочення--dizziness--zawroty głowy--vertige--mareo--závratě
+180--рвота--блювота--vomiting--wymioty--vomissements--vómitos--zvracení
+181--ушиб--Синцях--bruised--posiniaczone--meurtri--magullado--pohmožděný
+182--доктор--лікар--doctor--lekarz--médecin--médico--Doktor
+183--назначить лечение--призначити лікування--assign treatment--przypisać leczenie--affecter le traitement--Asigne tratamiento--přiřadit léčby
+184--лекарство--ліки--medication--leki--médicament--medicamento--léky
+185--капельница--крапельниця--dropper--zakraplacz--compte-gouttes--gotero--kapátkem
+186--йод--Йод--iodine--jodu--iode--yodo--JOD
+187--перевязка--перев'язка--bandaging--bandażowanie--le pansement--vendaje--bandážování
+188--терапевт--терапевт--therapist--terapeuta--thérapeute--terapeuta--terapeut
+189--зажить--залікувати--heal--leczyć--guérir--curar--léčení
+190--веселиться--Розважатися--have fun--Baw się dobrze--Amusez-vous--Que te diviertas--Bav se
+191--гости--Гості--guests--Goście--invités--huéspedes--Hosté
+192--игра--Гра--game--gra--jeu--juego--hra
+193--вечеринка--вечірка--party--Strona--parti--partido--strana
+194--ресторан--Ресторан--restaurant--Restauracja--restaurant--restaurante--Restaurace
+195--танцевать--танець--dance--taniec--danse--danza--tanec
+196--дискотека--Дискотека--Disco--Dyskoteka--Disco--Disco--Disco
+197--кино--кіно--cinema--Kino--cinéma--cine--kino
+198--театр--Театр--Theatre--Teatr--Théâtre--Teatro--Divadlo
+199--музей--Музей--Museum--Muzeum--Musée--Museo--Muzeum
+200--цирк--Цирк--Circus--Cyrk--Cirque--Circo--Cirkus
+201--казино--Казино--Casino--Kasyno--Casino--Casino--Casino
+202--концерт--концерт--concert--Koncert--concert--Concierto--koncert
+203--аттракционы--розваги--entertainment--Rozrywka--divertissement--entretenimiento--zábava
+204--бассейн--басейн--pool--basen--piscine--piscina--bazén
+205--кататься на коньках--Кататися на ковзанах--Skate--Skate--Patinage--Skate--Brusle
+206--ходить на лыжах--прогулянка до лижного спорту--walk to skiing--spacerem do jazdy na nartach--marcher au ski--a pie de esquí--pěšky k lyžování
+207--мяч--м'яч--ball--Piłka--ball--bola--míč
+208--кроссворд--кросворд--crossword puzzle--Krzyżówka--mots croisés--Crucigrama--Křížovka
+209--домино--Доміно--Domino--Domino--Domino--Dominó--Domino
+210--санки--Санки--Sledge--Sanki--Luge--Trineo--Sáně
+211--осмотр достопримечательностей--Визначні пам'ятки--Sightseeing--Zwiedzanie--Visites--Turismo--Památky
