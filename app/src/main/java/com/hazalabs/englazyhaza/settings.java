@@ -73,7 +73,7 @@ public class settings extends AppCompatActivity {
                             });
                         }
                     };
-                    timerAsync.schedule(timerTaskAsync, 0, 5000);
+                    timerAsync.schedule(timerTaskAsync, 0, 6 * 1000);
                 }
                 else{
 
@@ -108,4 +108,5 @@ public class settings extends AppCompatActivity {
         Toast.makeText(this, "Alarm Scheduled for Tommrrow", Toast.LENGTH_LONG).show();
 
     }
+
 }

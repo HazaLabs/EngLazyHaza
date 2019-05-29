@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
                 ToLanguage = 1;
                 learnAct.putExtra("TL", Integer.toString(ToLanguage));
-                learnAct.putExtra("TL", Integer.toString(ToLanguage));
+                tossupIntent.putExtra("TL", Integer.toString(ToLanguage));
 
                 //  ForQuiz.putExtra("TL", Integer.toString(ToLanguage));
             }
