@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tossup"></activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".tossup" />
         <activity android:name=".QuizActivity" />
         <activity
             android:name=".LearningActivity"
@@ -24,8 +28,7 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".ReceiverAlarm"></receiver>
+        <receiver android:name=".ReceiverAlarm" />
     </application>
 
 </manifest>

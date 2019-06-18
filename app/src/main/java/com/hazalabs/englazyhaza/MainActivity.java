@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         Intent sett = new Intent(this,settings.class);
+        Intent about = new Intent(this,About.class);
         switch(id){
             case R.id.action_settings:
                 sett.putExtra("FL", Integer.toString(FromLanguage));
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(sett);
                 return true;
             case R.id.action_about:
+                startActivity(about);
                 //go on next activity
                 return true;
             default:
