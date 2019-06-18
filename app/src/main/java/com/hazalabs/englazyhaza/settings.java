@@ -18,10 +18,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.GregorianCalendar;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -29,12 +35,21 @@ import static android.support.v4.app.NotificationCompat.PRIORITY_HIGH;
 import static android.support.v4.app.NotificationCompat.PRIORITY_LOW;
 
 public class settings extends AppCompatActivity {
+    int TLint;
+    int FLint;
+    String TitleWord;
+    String TextWord;
     public NotificationManager notificationManager;
     private static final int ID_NOTIFY = 1;
     private static final String ID_CHANEL = "CHANEL_ID";
     long startTime = 1*60*1000; // 2 min
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = getIntent();
+        String FL = intent.getStringExtra("FL");
+        String TL = intent.getStringExtra("TL");
+        FLint = Integer.parseInt(FL);
+        TLint = Integer.parseInt(TL);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
@@ -45,6 +60,10 @@ public class settings extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if(isChecked){
+                    StartTossUp();
+                    EditText time = (EditText)findViewById(R.id.editText2);
+                    String timeStrin = time.getText().toString();
+                    int timeInt = Integer.parseInt(timeStrin);
                     Timer timerAsync = new Timer();
                     TimerTask timerTaskAsync = new TimerTask() {
                         @Override
@@ -60,20 +79,20 @@ public class settings extends AppCompatActivity {
                                                     .setSmallIcon(R.drawable.ic_launcher_foreground)
                                                     .setWhen(System.currentTimeMillis())
                                                     .setContentIntent(pendingIntent)
-                                                    .setContentTitle("Notification")
-                                                    .setContentText("SetText")
+                                                    .setContentTitle(TitleWord)
+                                                    .setContentText(TextWord)
                                                     .setPriority(PRIORITY_HIGH);
-                                    Toast toast = Toast.makeText(getApplicationContext(), "Эта фигня работает!", Toast.LENGTH_SHORT);
+                                    Toast toast = Toast.makeText(getApplicationContext(), "Push - up active!", Toast.LENGTH_SHORT);
                                     toast.show();
                                     createChannelIfNeeded(notificationManager);
                                     notificationManager.notify(ID_NOTIFY, notificationBuilder.build());
-                                    Log.d("repeat","after each 10 sec");
+                                    Log.d("repeat","after each minite");
                                     //call web service here to repeat
                                 }
                             });
                         }
                     };
-                    timerAsync.schedule(timerTaskAsync, 0, 6 * 1000);
+                    timerAsync.schedule(timerTaskAsync, 0, timeInt * 60 * 1000);
                 }
                 else{
 
@@ -107,6 +126,29 @@ public class settings extends AppCompatActivity {
         alarmManager.set(AlarmManager.RTC_WAKEUP,time, PendingIntent.getBroadcast(this,1,  intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT));
         Toast.makeText(this, "Alarm Scheduled for Tommrrow", Toast.LENGTH_LONG).show();
 
+    }
+    public void StartTossUp() {
+        String defendLine;
+        try {
+            InputStream vacab = getResources().openRawResource(R.raw.vocabulary);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(vacab));
+            Random rnd = new Random(System.currentTimeMillis());
+            int number = 1 + rnd.nextInt(211 - 1 + 1);
+            int i = 1;
+            defendLine = reader.readLine();
+            while (number != i){
+                defendLine = reader.readLine();
+                i++;
+            }
+            String[] cols = defendLine.split("--");
+            TitleWord = cols[FLint];
+            TextWord = cols[TLint];
+            reader.reset();
+        } catch (IOException ex) {
+
+        } catch (NullPointerException exe) {
+
+        }
     }
 
 }

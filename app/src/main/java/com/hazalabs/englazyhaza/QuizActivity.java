@@ -3,18 +3,22 @@ package com.hazalabs.englazyhaza;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import android.speech.tts.TextToSpeech;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.ResultSet;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class QuizActivity extends AppCompatActivity {
+    private TextToSpeech TTS;
+    String wordVoice = " ";
     BufferedReader reader;
     boolean onClick = false;
     int TLint;
@@ -30,12 +34,30 @@ public class QuizActivity extends AppCompatActivity {
         String FL = intent.getStringExtra("FL");
         String TL = intent.getStringExtra("TL");
         int idFire = Integer.parseInt(id); // для проверки какая нажата кнопка
+        TTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override public void onInit(int initStatus) {
+            if (initStatus == TextToSpeech.SUCCESS){
+                int result = TTS.setLanguage(Locale.getDefault());
+                if (result == TextToSpeech.LANG_MISSING_DATA
+                        || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Log.e("TTS", "Извините, этот язык не поддерживается");
+                }
+            }
+            }
+        });
         FLint = Integer.parseInt(FL);
         TLint = Integer.parseInt(TL);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         LearningActivity learningActivity = new LearningActivity();
         Button next = (Button)findViewById(R.id.button3);
+        Button voice = (Button)findViewById(R.id.button7); //
+        voice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TTS.speak(wordVoice, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
         Button resetQuiz = (Button)findViewById(R.id.button4);
         final InputStream vacab = getResources().openRawResource(R.raw.vocabulary);
         reader = new BufferedReader(new InputStreamReader(vacab));
@@ -114,6 +136,7 @@ public class QuizActivity extends AppCompatActivity {
                     }
                     ToLng.setText(cols[TLint]);
                     FromLng.setText(cols[FLint]);
+                    wordVoice = cols[TLint];
         }
 catch (IOException ex){
 

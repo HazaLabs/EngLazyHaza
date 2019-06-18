@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         Intent sett = new Intent(this,settings.class);
         switch(id){
             case R.id.action_settings:
+                sett.putExtra("FL", Integer.toString(FromLanguage));
+                sett.putExtra("TL", Integer.toString(ToLanguage));
                 startActivity(sett);
                 return true;
             case R.id.action_about:
